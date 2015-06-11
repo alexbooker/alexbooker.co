@@ -6,11 +6,7 @@
     element.setAttribute("data-burger-state", state);
     element.setCurrentTime(0);
 
-    var nav = document.querySelector(".navigation");
-    if (state === "on")
-      nav.style.display = "block";
-    else
-      nav.style.display = "none";
+    $(".navigation").animate({opacity: 'toggle', height: 'toggle'}, 200);
 
   });
 }());
