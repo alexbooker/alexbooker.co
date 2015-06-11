@@ -1,43 +1,40 @@
 .header {
   padding: 25px 35px;
-  background-color: #F7F7F7;
-  position: relative;
-}
-
-.logo {
-  $primary: black;
-  text-transform: uppercase;
-  border: 2px $primary solid;
-  display: inline-block;
-  font-size: 25px;
-  padding: 5px 15px;
+  background-color: #F0F0F0;
+  .header__logo {
+    text-transform: uppercase;
+    border: 2px black solid;
+    font-size: 25px;
+    padding: 5px 15px;
+    display: inline;
+  }
 }
 
 .navigation {
-  display: none;
   $border-color: #e6e6e6;
+  display: none;
   margin-top: 20px;
   border: 1px $border-color solid;
   border-bottom: none;
-  &__link {
+  .navigation__link {
     display: block;
     border-bottom: 1px $border-color solid;
     padding: 15px;
+    transition: color .3s ease;
     &:hover {
-      color: tomato;
-      text-decoration: underline;
+      color: purple;
     }
-
   }
 }
 
 .burger {
   float: right;
-  &__icon {
+  .burger__icon {
+    $size: 32px;
     fill: black;
     cursor: pointer;
-    width: 32px;
-    height: 32px;
+    width: $size;
+    height: $size;
     &[data-burger-state="on"] > g[data-burger-face="menu"] {
       display: none;
     }

@@ -3,37 +3,35 @@ body {
 
 .header {
   padding: 25px 35px;
-  background-color: #F7F7F7;
-  position: relative; }
-
-.logo {
-  text-transform: uppercase;
-  border: 2px black solid;
-  display: inline-block;
-  font-size: 25px;
-  padding: 5px 15px; }
+  background-color: #F0F0F0; }
+  .header .header__logo {
+    text-transform: uppercase;
+    border: 2px black solid;
+    font-size: 25px;
+    padding: 5px 15px;
+    display: inline; }
 
 .navigation {
   display: none;
   margin-top: 20px;
   border: 1px #e6e6e6 solid;
   border-bottom: none; }
-  .navigation__link {
+  .navigation .navigation__link {
     display: block;
     border-bottom: 1px #e6e6e6 solid;
-    padding: 15px; }
-    .navigation__link:hover {
-      color: tomato;
-      text-decoration: underline; }
+    padding: 15px;
+    transition: color .3s ease; }
+    .navigation .navigation__link:hover {
+      color: purple; }
 
 .burger {
   float: right; }
-  .burger__icon {
+  .burger .burger__icon {
     fill: black;
     cursor: pointer;
     width: 32px;
     height: 32px; }
-    .burger__icon[data-burger-state="on"] > g[data-burger-face="menu"] {
+    .burger .burger__icon[data-burger-state="on"] > g[data-burger-face="menu"] {
       display: none; }
-    .burger__icon[data-burger-state="off"] > g[data-burger-face="x"] {
+    .burger .burger__icon[data-burger-state="off"] > g[data-burger-face="x"] {
       display: none; }
