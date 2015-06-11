@@ -17,17 +17,36 @@ body {
   margin-top: 20px;
   border: 1px #e6e6e6 solid;
   border-bottom: none; }
+  @media screen and (min-width: 700px) {
+    .navigation {
+      display: block;
+      margin-top: 0;
+      border: none;
+      float: right; } }
+  @media screen and (min-width: 700px) {
+    .navigation .navigation__item {
+      display: inline; } }
   .navigation .navigation__link {
     display: block;
     border-bottom: 1px #e6e6e6 solid;
     padding: 15px;
     transition: color .3s ease; }
+    @media screen and (min-width: 700px) {
+      .navigation .navigation__link {
+        border-bottom: none;
+        padding: 0;
+        display: inherit;
+        line-height: 44px;
+        padding-left: 15px; } }
     .navigation .navigation__link:hover {
       color: green; }
 
 .burger {
   float: right;
   line-height: 44px; }
+  @media screen and (min-width: 700px) {
+    .burger {
+      display: none; } }
   .burger .burger__icon {
     vertical-align: middle;
     fill: black;
