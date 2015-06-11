@@ -37,15 +37,15 @@
     border-bottom: 1px $border-color solid;
     padding: 15px;
     transition: color .3s ease;
+    &:hover {
+      color: green;
+    }
     @include desktop {
       border-bottom: none;
       padding: 0;
       display: inherit;
-      line-height: 44px;
+      line-height: 44px; // 50% of .header__logo's height
       padding-left: 15px;
-    }
-    &:hover {
-      color: green;
     }
   }
 }

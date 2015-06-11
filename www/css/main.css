@@ -34,6 +34,8 @@ body {
     border-bottom: 1px #e6e6e6 solid;
     padding: 15px;
     transition: color .3s ease; }
+    .navigation .navigation__link:hover {
+      color: green; }
     @media screen and (min-width: 700px) {
       .navigation .navigation__link {
         border-bottom: none;
@@ -41,8 +43,6 @@ body {
         display: inherit;
         line-height: 44px;
         padding-left: 15px; } }
-    .navigation .navigation__link:hover {
-      color: green; }
 
 .burger {
   float: right;
