@@ -11,6 +11,9 @@ body {
     font-size: 25px;
     padding: 5px 15px;
     display: inline-block; }
+  .header .header__container {
+    max-width: 1080px;
+    margin: 0 auto; }
 
 .navigation {
   display: none;
