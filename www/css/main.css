@@ -4,7 +4,6 @@ body {
 .header {
   padding: 25px 35px;
   background-color: #F7F7F7;
-  overflow: hidden;
   position: relative; }
 
 .logo {
@@ -15,19 +14,20 @@ body {
   padding: 5px 15px; }
 
 .navigation {
-  border: 1px black solid;
+  display: none;
+  margin-top: 20px;
+  border: 1px #e6e6e6 solid;
   border-bottom: none; }
-  .navigation__item {
-    border-bottom: 1px black solid;
-    padding: 10px 0; }
+  .navigation__link {
+    display: block;
+    border-bottom: 1px #e6e6e6 solid;
+    padding: 15px; }
+    .navigation__link:hover {
+      color: tomato;
+      text-decoration: underline; }
 
 .burger {
-  float: right;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 35px;
-  /*this sucks because I have to change the padding in two places, focus on design now, but fix it later, brah.*/ }
+  float: right; }
   .burger__icon {
     fill: black;
     cursor: pointer;

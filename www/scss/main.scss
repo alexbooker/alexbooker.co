@@ -7,7 +7,6 @@ body {
 .header {
   padding: 25px 35px;
   background-color: #F7F7F7;
-  overflow: hidden;
   position: relative;
 }
 
@@ -20,21 +19,25 @@ body {
 }
 
 .navigation {
-  border: 1px black solid;
+  display: none;
+  $border-color: #e6e6e6;
+  margin-top: 20px;
+  border: 1px $border-color solid;
   border-bottom: none;
-  &__item {
-    border-bottom: 1px black solid;
-    padding: 10px 0;
+  &__link {
+    display: block;
+    border-bottom: 1px $border-color solid;
+    padding: 15px;
+    &:hover {
+      color: tomato;
+      text-decoration: underline;
+    }
+
   }
 }
 
 .burger {
   float: right;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 35px; /*this sucks because I have to change the padding in two places, focus on design now, but fix it later, brah.*/
-
   &__icon {
     fill: black;
     cursor: pointer;
