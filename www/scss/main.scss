@@ -1,4 +1,10 @@
-body {
-	background-color: red;
-}
+$primary: black;
 
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  border: 3px $primary solid;
+  display: inline-block;
+  font-size: 30px;
+  padding: 5px 15px;
+}
