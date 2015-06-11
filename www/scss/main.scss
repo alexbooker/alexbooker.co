@@ -1,53 +1,6 @@
-$primary: black;
+// Base
+@import "base/variables";
+@import "base/base";
 
-body {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.header {
-  padding: 25px 35px;
-  background-color: #F7F7F7;
-  position: relative;
-}
-
-.logo {
-  text-transform: uppercase;
-  border: 2px $primary solid;
-  display: inline-block;
-  font-size: 25px;
-  padding: 5px 15px;
-}
-
-.navigation {
-  display: none;
-  $border-color: #e6e6e6;
-  margin-top: 20px;
-  border: 1px $border-color solid;
-  border-bottom: none;
-  &__link {
-    display: block;
-    border-bottom: 1px $border-color solid;
-    padding: 15px;
-    &:hover {
-      color: tomato;
-      text-decoration: underline;
-    }
-
-  }
-}
-
-.burger {
-  float: right;
-  &__icon {
-    fill: black;
-    cursor: pointer;
-    width: 32px;
-    height: 32px;
-    &[data-burger-state="on"] > g[data-burger-face="menu"] {
-      display: none;
-    }
-    &[data-burger-state="off"] > g[data-burger-face="x"] {
-      display: none;
-    }
-  }
-}
+// Components
+@import "components/header";
