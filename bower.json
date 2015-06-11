@@ -1,0 +1,18 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "authors": [
+    "Alex Booker <alexbooker@fastmail.im>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
