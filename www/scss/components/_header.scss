@@ -35,9 +35,11 @@
     cursor: pointer;
     width: $size;
     height: $size;
+    // when the burger is "on", hide the menu group ("g"); show the "x" group only
     &[data-burger-state="on"] > g[data-burger-face="menu"] {
       display: none;
     }
+    // when the burger is "off", hide the "x" group ("g"); show the menu group only
     &[data-burger-state="off"] > g[data-burger-face="x"] {
       display: none;
     }
