@@ -17,14 +17,14 @@
   margin-top: 20px;
   border: 1px $border-color solid;
   border-bottom: none;
-  @media screen and (min-width: $mobile-breakpoint) {
+  @include desktop {
     display: block;
     margin-top: 0;
     border: none;
     float: right;
   }
   .navigation__item {
-    @media screen and (min-width: $mobile-breakpoint) {
+    @include desktop {
       display: inline;
     }
   }
@@ -33,7 +33,7 @@
     border-bottom: 1px $border-color solid;
     padding: 15px;
     transition: color .3s ease;
-    @media screen and (min-width: $mobile-breakpoint) {
+    @include desktop {
       border-bottom: none;
       padding: 0;
       display: inherit;
@@ -49,7 +49,7 @@
 .burger {
   float: right;
   line-height: 44px; // 50% of .header__logo's height
-  @media screen and (min-width: $mobile-breakpoint) {
+  @include desktop {
     display: none;
   }
   .burger__icon {
