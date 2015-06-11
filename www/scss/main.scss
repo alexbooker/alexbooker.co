@@ -1,5 +1,10 @@
 $primary: black;
 
+.header {
+  text-align: center;
+  padding: 25px;
+}
+
 .logo {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -7,4 +12,5 @@ $primary: black;
   display: inline-block;
   font-size: 30px;
   padding: 5px 15px;
+  margin: 0 auto;
 }
