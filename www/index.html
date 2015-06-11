@@ -16,22 +16,64 @@
 <body>
 
   <header class="header">
-    <h1 class="logo">
-      <a href="#">Booker</a>
-    </h1>
-    <nav role="primary">
-      <ul class="navigation">
-        <li class="navigation__item"><a href="#">Profile</a></li>
-        <li class="navigation__item"><a href="#">Blog</a></li>
-        <li class="navigation__item"><a href="#">Connect</a></li>
-      </ul>
-    </nav>
+    <h1 class="logo">Booker</h1>
+      <button class="burger">
+        <svg class="burger__icon" data-burger-state="off" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+          <g data-burger-face="x">
+            <rect x="5" y="15" width="22" height="2">
+              <animate attributeName="x" attributeType="XML" from="5" to="15" begin="0" dur="0.2s" fill="freeze"></animate>
+              <animate attributeName="width" attributeType="XML" from="22" to="2" begin="0" dur="0.2s" fill="freeze"></animate>
+            </rect>
+            <rect x="5" y="9" width="11" height="2">
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" begin="0" dur="0.2s" from="0 10 10" to="45 10 10" fill="freeze"></animateTransform>
+              <animate attributeName="x" attributeType="XML" from="5" to="8" begin="0.05s" dur="0.205s" fill="freeze"></animate>
+            </rect>
+            <rect x="16" y="9" width="11" height="2">
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" begin="0" dur="0.2s" from="0 22 10" to="-45 22 10" fill="freeze"></animateTransform>
+              <animate attributeName="x" attributeType="XML" from="16" to="13" begin="0.05s" dur="0.205s" fill="freeze"></animate>
+            </rect>
+            <rect x="16" y="21" width="11" height="2">
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" begin="0" dur="0.2s" from="0 22 22" to="45 22 22" fill="freeze"></animateTransform>
+              <animate attributeName="x" attributeType="XML" from="16" to="13" begin="0.05s" dur="0.205s" fill="freeze"></animate>
+            </rect>
+            <rect x="5" y="21" width="11" height="2">
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" begin="0s" dur="0.2s" from="0 10 22" to="-45 10 22" fill="freeze"></animateTransform>
+              <animate attributeName="x" attributeType="XML" from="5" to="8" begin="0.05s" dur="0.205s" fill="freeze"></animate>
+            </rect>
+          </g>
+          <g data-burger-face="menu">
+            <rect x="15" y="15" width="2" height="2">
+              <animate attributeName="x" attributeType="XML" from="15" to="5" begin="0s" dur="0.2s" fill="freeze"></animate>
+              <animate attributeName="width" attributeType="XML" from="2" to="22" begin="0s" dur="0.2s" fill="freeze"></animate>
+            </rect>
+            <rect x="8" y="9" width="11" height="2" transform="rotate(45 10 10)">
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" begin="0.05s" dur="0.2s" from="45 10 10" to="0 10 10" fill="freeze"></animateTransform>
+              <animate attributeName="x" attributeType="XML" from="8" to="5" begin="0" dur="0.205s" fill="freeze"></animate>
+            </rect>
+            <rect x="13" y="9" width="11" height="2" transform="rotate(-45 22 10)">
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" begin="0.05s" dur="0.2s" from="-45 22 10" to="0 22 10" fill="freeze" data-anim=""></animateTransform>
+              <animate attributeName="x" attributeType="XML" from="13" to="16" begin="0" dur="0.205s" fill="freeze"></animate>
+            </rect>
+            <rect x="13" y="21" width="11" height="2" transform="rotate(45 22 22)">
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" begin="0.05s" dur="0.2s" from="45 22 22" to="0 22 22" fill="freeze"></animateTransform>
+              <animate attributeName="x" attributeType="XML" from="13" to="16" begin="0" dur="0.205s" fill="freeze"></animate>
+            </rect>
+            <rect x="8" y="21" width="11" height="2" transform="rotate(-45 10 22)">
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" begin="0.05s" dur="0.2s" from="-45 10 22" to="0 10 22" fill="freeze"></animateTransform>
+              <animate attributeName="x" attributeType="XML" from="8" to="5" begin="0" dur="0.205s" fill="freeze"></animate>
+            </rect>
+          </g>
+        </svg>
+      </button>
   </header>
+
+
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="components/jquery/dist/jquery.min.js"><\/script>')
   </script>
+  <script src="js/burger-icon.js"></script>
 
 <!--
   <script>

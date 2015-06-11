@@ -25,6 +25,7 @@ gulp.task('default', ['sass'], function() {
   gulp.watch([
     'www/*.html',
     'www/css/*.css',
+    'www/js/*.js',
   ]).on('change', reload);
   initBrowserSync();
 });

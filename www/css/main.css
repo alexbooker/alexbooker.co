@@ -2,16 +2,17 @@ body {
   font-family: 'Montserrat', sans-serif; }
 
 .header {
-  text-align: center;
-  padding: 25px; }
+  padding: 25px 35px;
+  background-color: #F7F7F7;
+  overflow: hidden;
+  position: relative; }
 
 .logo {
   text-transform: uppercase;
-  border: 3px black solid;
+  border: 2px black solid;
   display: inline-block;
-  font-size: 30px;
-  padding: 5px 15px;
-  margin-bottom: 25px; }
+  font-size: 25px;
+  padding: 5px 15px; }
 
 .navigation {
   border: 1px black solid;
@@ -19,3 +20,20 @@ body {
   .navigation__item {
     border-bottom: 1px black solid;
     padding: 10px 0; }
+
+.burger {
+  float: right;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 35px;
+  /*this sucks because I have to change the padding in two places, focus on design now, but fix it later, brah.*/ }
+  .burger__icon {
+    fill: black;
+    cursor: pointer;
+    width: 32px;
+    height: 32px; }
+    .burger__icon[data-burger-state="on"] > g[data-burger-face="menu"] {
+      display: none; }
+    .burger__icon[data-burger-state="off"] > g[data-burger-face="x"] {
+      display: none; }
