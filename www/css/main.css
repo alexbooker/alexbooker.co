@@ -20,14 +20,15 @@ body {
   margin-top: 20px;
   border: 1px #e6e6e6 solid;
   border-bottom: none; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 650px) {
     .navigation {
       display: block;
       margin-top: 0;
       border: none;
       float: right; } }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 650px) {
     .navigation .navigation__item {
+      float: right;
       display: inline; } }
   .navigation .navigation__link {
     text-align: center;
@@ -37,7 +38,7 @@ body {
     transition: color .3s ease; }
     .navigation .navigation__link:hover {
       color: green; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 650px) {
       .navigation .navigation__link {
         border-bottom: none;
         padding: 0;
@@ -55,7 +56,7 @@ body {
     display: none; }
   .burger[data-burger-state="off"] g[data-burger-face="x"] {
     display: none; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 650px) {
     .burger {
       display: none; } }
   .burger .burger__icon {

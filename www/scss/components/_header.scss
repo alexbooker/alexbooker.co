@@ -29,6 +29,7 @@
   }
   .navigation__item {
     @include desktop {
+      float: right;
       display: inline;
     }
   }

@@ -10,4 +10,12 @@ $(function() {
       height: 'toggle'
     }, 200);
   });
+
+  $(window).resize(function (){
+    if ( $(window).width() >= 650 ) {
+      $('.navigation').removeAttr('style');
+      burger.attr("data-burger-state", "off");
+    }
+  });
+
 });
