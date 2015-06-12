@@ -1,0 +1,14 @@
+.footer {
+  position: relative;
+  &:before {
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translateX(-50%) rotate(45deg);
+    top: -30px;
+    background: white;
+    position: absolute;
+    content: "";
+    pointer-events: none;
+  }
+}
