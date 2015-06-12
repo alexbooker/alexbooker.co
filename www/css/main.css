@@ -67,15 +67,18 @@ body {
     height: 32px; }
 
 .banner {
-  background-color: #EFF5F7; }
-  .banner .banner__wrap {
-    padding: 40px 55px; }
+  background-color: #EFF5F7;
+  padding: 40px 55px; }
   .banner .banner__title {
     text-transform: uppercase;
     font-size: 33px;
     line-height: 44px;
     color: #697273;
     margin-bottom: 15px; }
+    @media screen and (min-width: 650px) {
+      .banner .banner__title {
+        font-size: 50px;
+        line-height: 68px; } }
   .banner .banner__foo {
     background-color: #3b4345;
     color: white;
@@ -85,3 +88,7 @@ body {
     font-size: 21px;
     line-height: 32px;
     color: #697273; }
+  @media screen and (min-width: 650px) {
+    .banner .banner__wrap {
+      max-width: 1080px;
+      margin: 0 auto; } }
