@@ -30,6 +30,7 @@ body {
     .navigation .navigation__item {
       display: inline; } }
   .navigation .navigation__link {
+    text-align: center;
     display: block;
     border-bottom: 1px #e6e6e6 solid;
     padding: 15px;
@@ -43,6 +44,9 @@ body {
         display: inherit;
         line-height: 44px;
         padding-left: 15px; } }
+
+.expanded {
+  display: block; }
 
 .burger {
   float: right;

@@ -33,6 +33,7 @@
     }
   }
   .navigation__link {
+    text-align:center;
     display: block;
     border-bottom: 1px $border-color solid;
     padding: 15px;
@@ -48,6 +49,10 @@
       padding-left: 15px;
     }
   }
+}
+
+.expanded {
+  display: block;
 }
 
 .burger {
