@@ -53,9 +53,18 @@
 .burger {
   float: right;
   line-height: 44px; // 50% of .header__logo's height
+  // when the burger is "on", hide the menu group ("g"); show the "x" group only
+    &[data-burger-state="on"] g[data-burger-face="menu"] {
+      display: none;
+    }
+    // when the burger is "off", hide the "x" group ("g"); show the menu group only
+    &[data-burger-state="off"] g[data-burger-face="x"] {
+      display: none;
+    }
   @include desktop {
     display: none;
   }
+
   .burger__icon {
     vertical-align: middle;
     $size: 32px;
@@ -63,13 +72,6 @@
     cursor: pointer;
     width: $size;
     height: $size;
-    // when the burger is "on", hide the menu group ("g"); show the "x" group only
-    &[data-burger-state="on"] > g[data-burger-face="menu"] {
-      display: none;
-    }
-    // when the burger is "off", hide the "x" group ("g"); show the menu group only
-    &[data-burger-state="off"] > g[data-burger-face="x"] {
-      display: none;
-    }
+
   }
 }

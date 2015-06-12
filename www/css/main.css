@@ -47,6 +47,10 @@ body {
 .burger {
   float: right;
   line-height: 44px; }
+  .burger[data-burger-state="on"] g[data-burger-face="menu"] {
+    display: none; }
+  .burger[data-burger-state="off"] g[data-burger-face="x"] {
+    display: none; }
   @media screen and (min-width: 700px) {
     .burger {
       display: none; } }
@@ -56,7 +60,3 @@ body {
     cursor: pointer;
     width: 32px;
     height: 32px; }
-    .burger .burger__icon[data-burger-state="on"] > g[data-burger-face="menu"] {
-      display: none; }
-    .burger .burger__icon[data-burger-state="off"] > g[data-burger-face="x"] {
-      display: none; }
