@@ -11,6 +11,10 @@
   // background-color: tomato;
   padding: 40px 55px;
   padding-bottom: 100px;
+  @include desktop {
+    padding-top: 19vh;
+    padding-bottom: 19vh;
+  }
   .banner__title {
     text-transform: uppercase;
     font-size: 33px;
